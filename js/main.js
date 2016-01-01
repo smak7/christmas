@@ -87,11 +87,11 @@ function updateMap(){
 				for( var i = 0; i < data.data.length; i++){
 					insertMarkerIntoMap(data.data[i]);				
 				}
-				setInterval(updateMap, updateDuration);
+				setTimeout(updateMap, updateDuration);
 			},
 			error: function(response) { 
 				if(response.status == 429) { //just slow down requests
-					setInterval(updateMap, updateDuration + throttleDelay);
+					setTimeout(updateMap, updateDuration + throttleDelay);
 				} else {
 					alert('Failed! Please try refreshing page!');
 				}
