@@ -1,4 +1,4 @@
-# Christmas 
+christmas 
 
 Hashtag Christmas provides a platform for exploring how cultures around the world celebrate Christmas. Working with the instagram api and the google map api, I created a map that populates images of people celebrating Christmas around the globe.
 
